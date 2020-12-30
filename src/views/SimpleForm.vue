@@ -31,14 +31,14 @@
 
       <h3>Extras</h3>
       <div>
-        <input type="checkbox" v-model="event.extras.catering" class="field" />
-        <label>Catering</label>
+        <BaseCheckBox v-model="event.extras.catering" label="Catering" />
       </div>
 
       <div>
-        <input type="checkbox" v-model="event.extras.music" class="field" />
-        <label>Live music</label>
+        <BaseCheckBox v-model="event.extras.music" label="Live music" />
       </div>
+
+      <!-- <pre>{{ JSON.stringify(event, null, 2) }}</pre> -->
 
       <button class="button -fill-gradient" type="submit">Submit</button>
     </form>
